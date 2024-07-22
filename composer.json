@@ -1,0 +1,40 @@
+{
+  "name": "scarlett/lshw-parser",
+  "description": "A simple php lshw parser with no non ext dependencies.",
+  "homepage": "https://scarlettbytes.nl/lshw-parser",
+  "keywords": [
+    "lshw",
+    "parser",
+    "hardware",
+    "information",
+    "php8",
+    "linux",
+    "php",
+    "ubuntu"
+  ],
+  "version": "1.0.0",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Scarlett\\LshwParser\\": "src/lshw-parser/",
+      "Scarlett\\LshwParser\\tests\\": "src/tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Scarlett Samantha Verheul",
+      "email": "scarlett.verheul@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^8.2",
+    "ext-xml": "*",
+    "ext-dom": "*",
+    "ext-mbstring": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.0"
+  }
+}
