@@ -12,7 +12,7 @@
     "php",
     "ubuntu"
   ],
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "library",
   "autoload": {
     "psr-4": {

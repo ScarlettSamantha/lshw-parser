@@ -153,7 +153,7 @@ class Parser
      * @param string $class The class of the node to search for.
      * @return Entry|null The matched LshwEntry, or null if not found.
      */
-    private function searchNodeByClass(string $class): ?Entry
+    public function searchNodeByClass(string $class): ?Entry
     {
         $xpath = new DOMXPath($this->dom);
         $entries = $xpath->query("//node[@class='$class']");
@@ -172,7 +172,7 @@ class Parser
      * @return array An array of LshwEntry objects for each matched node.
      * @throws ParserException If the XPath query is invalid.
      */
-    private function searchNodesByClass(string $class): array
+    public function searchNodesByClass(string $class): array
     {
         $xpath = new DOMXPath($this->dom);
         $entries = $xpath->query("//node[@class='$class']");
